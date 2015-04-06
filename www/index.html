@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link  rel="stylesheet" type="text/css" href="jquery.wordsearchgame.css">
+    <link  rel="stylesheet" type="text/css" href="css/animate.css">
+    <link  rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.wordsearchgame.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- app's js -->
+    <script src="src/game/game.mdl.js"></script>
+    <script src="src/game/gameboard/gameboard.dir.js"></script>
+    <script src="src/menu/menu.mdl.js"></script>
+    <script src="src/app.js"></script>
+
+  </head>
+  <body ng-app="dttw">
+    <ui-view class="full"></ui-view>
+  </body>
+</html>

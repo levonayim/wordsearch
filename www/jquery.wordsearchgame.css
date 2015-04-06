@@ -1,0 +1,116 @@
+
+body{
+  background-color:#FF6600;
+
+}
+
+@media screen and (max-width:50em){
+    #rf-tablegrid{
+        width: 80vw;
+        height: 60vh;
+        padding: 0 1.5em;
+    }    
+        
+    .rf-tgrid {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        margin-left: 50%;
+        margin-top: 25%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:30em){
+    #rf-tablegrid{
+      width: 80vw;
+      height: 60vh;
+      margin-left: 5%;
+      margin-top: 30%;
+      padding: 0 1.5em;
+      border: 0.25em solid #FF6600;;
+        }
+        
+        .rf-tgrid {
+        
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 1px;
+        padding: 10px;
+    }
+    .rf-ptrue{
+      font-family: bitwonder;
+      font-size: 0.75em;
+        display:inline;
+        margin-left: 0.95em;
+        width:100%;
+      color:#FFFFFF;
+    }
+
+    .rf-pfalse {
+        position:absolute;
+        visibility: hidden;
+        line-height: 0;
+    }
+
+}
+
+/* Style for the grid */
+.rf-tablestyle {
+
+}
+
+/* Style for the div containing the grid */
+#rf-searchgamecontainer {
+    float: left;
+    padding-right: 50px; 
+    
+}
+
+/* Style for the div containing the word list */
+#rf-wordcontainer {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    float :left;
+    padding-right: 50px; 
+    cursor: default;
+    margin : 1em;
+
+    width:100%;
+    vertical-align:center;
+    text-align:center;
+    font-size:1.5em;
+    line-height:1.5em;
+}
+
+/* Style for the words that have been found */
+.rf-foundword {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-decoration : line-through;
+  color : lightgray;
+  font-style : italic;
+
+}
+
+#rf-tablegrid .rf-armed {
+    background: lightcyan;
+}
+
+#rf-tablegrid .rf-highlight {
+    background: red;
+}
+
+
+#rf-tablegrid .rf-glowing {
+    background: greenyellow;
+        
+}
+
+#rf-tablegrid .rf-selected {
+    background: gold;
+}
+
+/* style for words that didn't make it on the grid */
+.rf-pfalse {
+    color: gray;
+    visibility: hidden; 
+}
