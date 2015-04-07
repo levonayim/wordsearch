@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Word Search App | Levona Yim</title>
 
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
+	<script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
+	<script src="//connect.soundcloud.com/sdk.js"></script>
+	<script src="js/script.js"></script>
+	
+	
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link  rel="stylesheet" type="text/css" href="jquery.wordsearchgame.css">
+  <!--   <link  rel="stylesheet" type="text/css" href="jquery.wordsearchgame.css"> -->
     <link  rel="stylesheet" type="text/css" href="css/animate.css">
     <link  rel="stylesheet" type="text/css" href="css/normalize.css">
 
@@ -19,6 +25,12 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+	
+	<!-- HammerJS 
+	<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+	<script type="text/javascript" src="src/game/gameboard/rotating.js"></script>
+	<script type="text/javascript" src="src/game/gameboard/hammer.js"></script>
+-->
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -29,12 +41,33 @@
     <script src="src/menu/menu.mdl.js"></script>
     <script src="src/app.js"></script>
 	
-	<!-- HammerJS -->
-	<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
-	<script src="rotating.js"></script>
+	
+	
+	<script src="js/d3.js"></script>
+	<script src="js/d3.hexbin.v0.min.js?5c6e4f0"></script>
+	
+	<script src="js/mousetrap.js"></script>
+	<script src="js/id3-minimized.js"></script>
+	
+	<!-- below are all for the soundcloud
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>-->
+	<script src="//connect.soundcloud.com/sdk.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+	<script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
+	
+	
+	<!-- From Weather 
+	<script src="lib/js/angular/angular-resource.js"></script>
 
+    <script src="js/services.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+	-->
   </head>
   <body ng-app="dttw">
     <ui-view class="full"></ui-view>
+
   </body>
 </html>
