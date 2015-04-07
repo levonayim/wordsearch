@@ -208,10 +208,6 @@
     ); //widget
 
 
-$.extend($.ryanf.wordsearchwidget, {
-	version: "0.0.1"
-});
-
 //------------------------------------------------------------------------------
 // VIEW OBJECTS 
 //------------------------------------------------------------------------------
@@ -455,9 +451,11 @@ var Visualizer = {
         $(c).removeClass("rf-armed")
             .removeClass("rf-glowing")
 			.animate({'opacity' : '20'}, 500, "linear", function () {
-				$(c).removeClass("rf-highlight").addClass("rf-selected")
-				.animate({'opacity' : 'show'}, 500, "linear")
-			})
+			
+		$(c).removeClass("rf-highlight")
+			.addClass("rf-selected rotateIn")
+			.animate({'opacity' : 'show'}, 500, "linear")
+		})
             
         
     },
@@ -1305,6 +1303,9 @@ var GameWidgetHelper = {
 	signalWordFound : function(idx) {
 		var w = $("li").get(idx);
 		Visualizer.signalWordFound(w);
+		var score = 0;
+		score++;
+
 	}
 	
 }
