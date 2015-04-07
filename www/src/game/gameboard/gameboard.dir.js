@@ -59,8 +59,8 @@ angular.module('dttw.game')
 			$scope.startGame = function () {
 				//start the game loop
 				//framerateInterval = setInterval(updatePosition, framerate);
-				var words = "earth,mars,mercury,neptune,pluto,saturn,jupiter,one,two,"+
-						"three,four,five,six,seven,eight,mozart,bach,meyer,rose,mahler";
+				var words = "three,four,mozart,bach,meyer,rose,mahler,movie,pie,cupcakes,lamb,cheese,quilt,"
+				+ "earth,mars,mercury,neptune,five,six,seven,eight,pluto,saturn,jupiter,one,two";
 			
 			//attach the game to a div
 			$("#theGrid").wordsearchwidget({"wordlist" : words,"gridsize" : 7});
