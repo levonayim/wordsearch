@@ -36,11 +36,6 @@ angular.module('dttw.game', [])
 		//reload current state
 		$state.go($state.current, {}, { reload: true });
 	}
-	
-	function refreshData() {
-		//reload current state
-		// $state.go($state.current, {}, { reload: true });
-	}
 
 	$scope.addScore = function () {
 		$scope.score += 1;
@@ -49,16 +44,16 @@ angular.module('dttw.game', [])
 
 	$scope.gameOver = function () {
 		$ionicPopup.alert({
-			title: 'Thanks for Playing',
+			title: 'your score',
 			template: '<span class="highscore">' + $scope.score + '</span>',
 			buttons: [{
-					text: 'Play Again!',
+					text: 'again!',
 					type: 'again',
 					onTap: function(e) {
 						return 'again';
 					}
 				},{
-					text: 'Menu',
+					text: 'menu',
 					type: 'button-default',
 					onTap: function(e) {
 						return 'menu';
