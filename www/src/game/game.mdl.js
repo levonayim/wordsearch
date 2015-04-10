@@ -1,8 +1,4 @@
-/**
-* dttw.menu Module
-*
-* Piotr Machowski
-*/
+
 angular.module('dttw.game', [])
 
 .config(['$stateProvider',function($stateProvider) {
