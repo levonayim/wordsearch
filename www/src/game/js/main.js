@@ -1,10 +1,7 @@
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 (function () {
-
-	var root = this;  														// use global context rather than window object
-	var waveform_array, old_waveform, objectUrl, metaHide, micStream;		// raw waveform data from web audio api
-	var WAVE_DATA = []; 													// normalized waveform data used in visualizations
 
 	// main app/init stuff //////////////////////////////////////////////////////////////////////////
 	var a = {};	
@@ -1822,4 +1819,5 @@
 }).call(this);
 
 $(document).ready(App.init);
+
 

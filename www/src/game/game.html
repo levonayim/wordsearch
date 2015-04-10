@@ -5,10 +5,27 @@
 	<button class="button button-outline pause" ng-click="onPauseTap()">|&nbsp;|</button>
 	<section class="score">{{score}}</section>
 	
-		<a id="start" class="button ion-volume-medium"></a>
-		<a id="stop" class="button ion-volume-mute"></a>
+		<!-- <a id="start" class="button ion-volume-medium"></a>
+		<a id="stop" class="button ion-volume-mute"></a> -->
 		
 		<a href="#" id="back" class="button icon-left ion-chevron-left button-clear button-dark"></a>
+
+		 <!--<div class='wrapper'>
+            <div id="mp3_player" class='fade'>
+                <div id="audio_box"></div> <i id='fullscreen' class="icon-resize-full-alt"></i>
+            </div>
+
+            <div id='progressBar' class='progressBar'></div>
+            <div class='song-metadata'></div>
+            
+            <div class='menu-wide'>
+                <div class='options'>
+                    <div class='menu-controls'>
+                        <i class="i icon-soundcloud3" data='Play music from a SoundCloud URL.'></i> 
+                    </div>               
+                </div>
+            </div>
+        </div>Wrapper-->
 		
 	<section class="countdown full" ng-if="showCountdown"><span>{{countdown}}</span></section>
 </section>
