@@ -130,6 +130,11 @@ html, body {
 	color:cyan;
 	font-size:1.5em;
 }
+#soundcloud_icon{
+  color:cyan;
+  opacity: 1;
+}
+
 
 /*GAMEBOARD DIRECTIVE*/
 .view-port {
