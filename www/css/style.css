@@ -124,12 +124,15 @@ html, body {
 	right:0.5em;
 }
 #back{
-	position:absolute;
-	top:0.5em;
-	left:0.5em;
-	color:cyan;
-	font-size:1.5em;
+  position:absolute;
+  top:0.5em;
+  left:0.5em;
+  color:cyan;
+  font-size:1em;
+  z-index: 5;
+  font-family: bitwonder;
 }
+
 #soundcloud_icon{
   color:cyan;
   opacity: 1;
